@@ -1,0 +1,38 @@
+.freelance{
+    padding:$pd-10  $pd-3 $pd-10 - 10;
+    background-color: $color-white-4;
+    .freelance__title{
+        padding-bottom: $pd-2;
+        h3{
+            @include styleText($color-gray-1,$fs-4 + 2,$fw-1);
+            word-spacing: 1px;
+            letter-spacing: .4px;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: $color-blue-5;
+            font-weight: $fw-3;
+            letter-spacing: .5px;
+            
+            &:hover{
+                color: $color-blue-5;
+            }
+            i{
+                margin-left: $mg-5 + 3;
+                
+            }
+        }
+    }
+    .freelance-carousel{
+        img{
+            height: 237px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &.owl-carousel{
+            @include owl-nav(-30px,-30px);
+        }
+
+    }
+}

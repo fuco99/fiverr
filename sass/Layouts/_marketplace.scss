@@ -1,0 +1,64 @@
+.marketplace {
+    padding: 0 $pd-3;
+    h2 {
+        @include styleText($color-gray-1, $fs-4, $fw-1);
+        padding-bottom: $pd-2;
+        letter-spacing: .5px;
+        word-spacing: 1px;
+        margin-bottom: $mg-3;
+    }
+    .marketplace__categories {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            width: 20%;
+            padding: 0 10px 55px;
+            text-align: center;
+            transition: .5s;
+            a {
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 45px;
+                    right: 50%;
+                    transform: translateX(50%);
+                    padding: 0 0 8px;
+                    width: 48px;
+                    border-bottom: 2px solid #c5c6c9;
+                    transition: .3s;
+                }
+                &:hover{
+                    &::after{
+                        border-color: $color-green-0;
+                        width: 90px;
+                    }
+                }
+                h3 {
+                    @include styleText($color-black-2, $fs-1, $fw-0);
+                    text-align: center;
+                }
+                img {
+                    width: 48px;
+                    height: 48px;
+                    margin: 0 auto 15px;
+                    display: block;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 899.98px){
+        .marketplace{
+            .marketplace__categories{
+                flex-basis: 33.33%;
+                li{
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@mixin styleButton($color,$bg-color,$border,$fs,$fw,$pd-y,$pd-x){
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+    cursor: pointer;
+}
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin hoverButton($color-hover, $bg-hover, $border-hover) {
+    color: $color-hover;
+    background-color: $bg-hover;
+    border: 1px solid $border-hover;
+}
+@mixin owl-nav($left,$right){
+    .owl-nav {
+        button {
+            &.owl-next,
+            &.owl-prev {
+                position: absolute;
+                top: 43%;
+                color: $color-gray-0;
+                background-color: $color-white-0;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                box-shadow: 0 2px 5px 0 $color-rgba-3;
+                font-size: $fs-2;
+                font-weight: $fw-0;
+                line-height: 48px;
+                &:hover {
+                    background-color: $color-white-0;
+                    color: $color-gray-0;
+                }
+            }
+            &.owl-prev {
+                left: $left;
+            }
+            &.owl-next {
+                right: $right;
+            }
+        }
+    }
+}
+@mixin responsive($screen){
+    @if map-has-key($map: $breakpoints, $key: $screen){
+        $value: map-get($map: $breakpoints , $key:  $screen );
+       @media screen and (max-width:$value){
+           @content;
+       }
+    }
+    @else{
+        @warn"`{$screen}` isn't exist in breakpoint" ;
+    }
+}

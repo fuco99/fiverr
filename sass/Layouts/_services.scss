@@ -1,0 +1,47 @@
+.services {
+    padding: 0 $pd-2 + 1 $pd-10;
+    max-width: 1400px;
+    .services__text {
+        h2 {
+            @include styleText($color-gray-3, $fs-4, $fw-2);
+            padding-bottom: $pd-2;
+            letter-spacing: .5px;
+            margin: 0;
+        }
+    }
+    .services-carousel {
+        .item {
+            cursor: pointer;
+            position: relative;
+            height: 345px;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: $border-radius-1;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: transparent;
+                color: $color-white-0;
+                padding: $pd-1 - 4;
+                p {
+                    margin-bottom: 0;
+                    font-size: $fs-0;
+                }
+                h3 {
+                    font-size: $pd-2;
+                    font-weight: $fw-1;
+                    letter-spacing: .5px;
+                }
+            }
+        }
+        &.owl-carousel {
+            @include owl-nav(-30px,-30px);
+        }
+    }
+}

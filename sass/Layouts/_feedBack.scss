@@ -1,0 +1,64 @@
+.fiverrFeedback {
+    .fiverrFeedback-carousel {
+        padding: $pd-10 $pd-3;
+        .item {
+            display: flex;
+            align-items: center;
+
+            .fiverrFeedback-carousel__left {
+                img {
+                    width: 470px;
+                    position: relative;
+                    cursor: pointer;
+                    height: 265px;
+                }
+                i {
+                    position: absolute;
+                    top: 92px;
+                    left: 195px;
+                    font-size: $fs-4 - 3;
+                    color: $color-white-0;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    line-height: 80px;
+                    background-color: $color-rgba-4;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+            .fiverrFeedback-carousel__right {
+                padding: 0 $pd-1 + 2 0 $pd-4;
+                width: 65%;
+                h5 {
+                    @include styleText($color-gray-4, $fs-5 - 3, $fw-3);
+                    letter-spacing: 0.5px;
+                    padding-bottom: 16px;
+                    span {
+                        border-left: 1px solid $color-gray-8;
+                        margin-left: $mg-0 + 4;
+                        img {
+                            height: 36px;
+                            width: 125px;
+                            display: inline-block;
+                            margin-left: $mg-0 + 4;
+                        }
+                    }
+                }
+                blockquote {
+                    p {
+                        @include styleText($color-green-6, $fs-4, $fw-0);
+                        font-family: "Domaine Display Narrow", sans-serif;
+                        font-style: italic;
+                        line-height: $line-height-2 + 6;
+                        word-spacing: 2px;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+        &.owl-carousel {
+           @include owl-nav(0,0);
+        }
+    }
+}

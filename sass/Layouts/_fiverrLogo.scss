@@ -1,0 +1,45 @@
+.fiverrLogo {
+    padding-bottom: $pd-10;
+
+    .fiverrLogo__content {
+        display: flex;
+        background-color: $color-blue-5;
+        background-image: url(../img/logo-maker-banner-wide-desktop-1352-2x.png);
+        background-size: cover;
+        width: 95%;
+        background-position: center;
+        height: 298px;
+        margin: 0 auto;
+        .fiverrLogo__left {
+            width: 40%;
+            padding: $pd-3 + 4 $pd-3 + 4 $pd-3 + 4 $pd-6 + 1;
+            img{
+                height: 26px;
+            }
+            h4 {
+                display: inline-block;
+                margin-left: $mg-0;
+
+                @include styleText($color-white-0, $fs-0 - 3, $fw-2);
+            }
+            h3 {
+                padding-top: $pd-5 + 1;
+                @include styleText($color-white-0, $fs-4 + 2, $fw-1);
+                word-spacing: 2px;
+                letter-spacing: .5px;
+                line-height: $line-height-2 - 1;
+                span {
+                    font-family: "Domaine Display Narrow", sans-serif;
+                    font-style: italic;
+                    line-height: $line-height-2 + 6;
+                    word-spacing: 2px;
+                    letter-spacing: 1px;
+                }
+            }
+            p{
+                margin-bottom: $mg-1;
+                @include styleText($color-white-0,$fs-1 + 1,$fw-0);
+            }
+        }
+    }
+}

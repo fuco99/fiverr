@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Archivo', sans-serif;
+    font-size: $fs-1;
+    color: $color-gray-0;
+    background-color: $color-white-0;
+    overflow-y: scroll;
+}
+.new {
+    margin-left: $mg-5 + 5;
+    padding: 0 $pd-0 - 1;
+    font-weight: $fw-2;
+   border: 1px solid $color-pink-0;
+    text-align: center;
+    color: $color-pink-0;
+    border-radius: $border-radius-0;
+    font-size: 10px;
+}

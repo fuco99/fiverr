@@ -1,0 +1,205 @@
+.fiverrFooter {
+    padding: $pd-4 $pd-2 0;
+    .fiverrFooter__top {
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            .col-3 {
+                text-align: left;
+                max-width: 100%;
+
+                h2 {
+                    padding: $pd-1 0;
+                    @include styleText($color-gray-1, $fs-1, $fw-1);
+                    letter-spacing: 0.5px;
+                }
+                ul {
+                    li {
+                        list-style: none;
+                        width: 100%;
+                        padding: 0 0 $pd-5 + 1;
+                        a {
+                            width: 100%;
+                            color: $color-gray-4;
+                            font-weight: $fw-0;
+                            letter-spacing: 0.3px;
+                            word-spacing: 1px;
+                            p {
+                                margin: 0;
+                                @include styleText($color-gray-6, $fs-0, $fw-3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fiverrFooter__bottom {
+        padding: $pd-5 0;
+        .fiverrFooter__copyright {
+            img {
+                width: 77px;
+                height: 23px;
+                color: $color-gray-0;
+                margin-right: $mg-1;
+            }
+            font-size: 14px;
+            color: $color-gray-6;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            padding: $pd-5 + 1 0;
+        }
+        .fiverrFooter__contact {
+            .fiverrFooter__social {
+                padding-right: $pd-5;
+                a {
+                    text-decoration: none;
+                    .fiverrFooter__icon {
+                        width: 20px;
+                        height: 20px;
+                        fill: $color-gray-4;
+                        font-size: 16px;
+                        padding: $pd-7 $pd-0 $pd-7 $pd-7;
+                        margin: 0 $pd-0;
+                    }
+                    &:hover > .fiverrFooter__icon{
+                        border-radius: 50%;
+                         background-color: $color-white-3;
+                        }
+                }
+            }
+            .fiverrFooter__language {
+                .nav-link{
+                    text-decoration: none;
+                    margin-right: $mg-0;
+                    padding: $pd-0;
+                    @include styleText($color-gray-4, $fs-0, $fw-1);
+                    &:hover {
+                        span{
+                            fill:$color-gray-3;
+                        }
+                        color: $color-gray-3;
+                        border-radius: $border-radius-0;
+                        background-color: $color-white-3;
+                    }
+                    .fiverrFooter-iconGlobal {
+                        fill: $color-gray-4;
+                        margin-right: $mg-0 - 6;
+                    }
+                }
+                .modal{
+                    .modal-dialog{
+                        .modal-content{
+                            width: 88%;
+                            height: 420px;
+                            margin: $mg-2 auto;
+                            border: none;
+                            .modal-header{
+                                border: none;
+                                padding: $pd-3;
+                               h5{
+                                @include styleText($color-gray-1,$fs-5 - 4, $fw-2);
+                                word-spacing: 1px;
+                               }
+                            }
+                            .modal-body{ 
+                               padding: 0 0 24px 0;
+                                li:first-of-type{
+                                    padding: $pd-7 $pd-5;
+                                }
+                                li{
+                                    list-style: none;
+                                    padding: $pd-7 $pd-9 - 5;
+                                   a{
+                                    text-decoration: none;
+                                    padding: 0 $pd-7;
+                                    text-align: left;
+                                    @include styleText($color-gray-0, $fs-1, $fw-3);
+                                    letter-spacing: 0.5px;
+                                    i {
+                                        font-size: $fs-0 - 5;
+                                        margin-right: $mg-0 ;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+               
+            }
+            .fiverrFooter__currency {
+                .nav-link {
+                    text-decoration: none;
+                    margin-right: $mg-0;
+                    padding: $pd-0;
+                    @include styleText($color-gray-4, $fs-0, $fw-1);
+                    &:hover {
+                        color: $color-gray-3;
+                        border-radius: $border-radius-0;
+                        background-color: $color-white-3;
+                    }
+                }
+                .modal{
+                   
+                    .modal-dialog{
+                        .modal-content{
+                            width: 88%;
+                            height: 500px;
+                            margin: $mg-6 auto;
+                            border: none;
+                            .modal-header{
+                                border: none;
+                                padding: $pd-3;
+                               h5{
+                                @include styleText($color-gray-1,$fs-5 - 4, $fw-2);
+                                word-spacing: 1px;
+                                
+                               }
+                            }
+                            .modal-body{ 
+                               padding: 0 0 24px 0;
+                               overflow: auto;
+                                li:first-of-type{
+                                    padding: $pd-5 - 1 $pd-5;
+                                }
+                                li{
+                                    list-style: none;
+                                    padding: $pd-5 - 1 $pd-9 - 5;
+                                   a{
+                                    text-decoration: none;
+                                    padding: 0 $pd-7;
+                                    text-align: left;
+                                    @include styleText($color-gray-0, $fs-1, $fw-3);
+                                    letter-spacing: 0.5px;
+                                    i {
+                                        font-size: $fs-0 - 5;
+                                        margin-right: $mg-0 ;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .accessibility-icon {
+                fill: $color-gray-4;
+                cursor: pointer;
+                &:hover{
+                    fill: $color-gray-1;
+                    background-color: $color-white-3;
+                    border-radius: 50%;
+                   circle{
+                       fill: $color-white-3;
+                       border-color: $color-white-3;
+                       stroke: $color-white-3;
+                   }
+                }
+            }
+        }
+    }
+}

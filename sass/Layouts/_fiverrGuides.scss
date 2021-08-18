@@ -1,0 +1,51 @@
+.fiverrGuides{
+     padding: $pd-10 $pd-3;
+    .fiverrGuides__title{
+       padding-bottom: $pd-2;
+        h2{
+            @include styleText($color-gray-1,$fs-4,$fw-2);
+            
+        }
+        a{
+            text-decoration: none;
+            color: $color-blue-5;
+           
+            letter-spacing: .5px;
+            font-weight: $fw-3;
+            &:hover{
+                color: $color-blue-5;
+            }
+            i{
+                margin-left: $mg-5 + 3; 
+                
+            }
+        }
+    }
+    .fiverrGuides__banner{
+        padding:$pd-8 + 20 $pd-10;
+        background-image: url("../img/bg-signup-1400-x1.png");
+        background-size: cover;
+        margin-top: $mg-4;
+        background-position: center;
+        height: 450px;
+        border-radius: $border-radius-1;
+        h2{
+            width: 59%;
+            @include styleText($color-white-0,$fs-3,$fw-2);
+            line-height: $line-height-1;
+            letter-spacing: 1px;
+            padding-bottom: $pd-9 - 5;
+            span{
+                font-family: "Domaine Display Narrow", sans-serif;
+                font-style: italic;
+                font-weight: 500;
+                line-height: $line-height-2 + 6;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+hr{
+    margin: 0;
+}

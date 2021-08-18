@@ -1,0 +1,19 @@
+.trustBy{
+    margin-bottom: $mg-2;
+    background-color: $color-white-1;
+    .trustBy__img{
+       display: flex; 
+        align-items: center;
+        justify-content: center;
+        height: 95px;
+        span{
+            color: $color-gray-6;
+            font-weight: $fw-1;
+            padding-right: $pd-9 - 1;
+            letter-spacing: .5px;
+        }
+        .trustBy__item{
+           padding-right: $pd-4 - 4;
+        }
+    }
+}
